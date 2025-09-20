@@ -1,0 +1,12 @@
+<div class="nav-wrapper">
+  <div class="logo">
+    <a href="/"><img src="/img/logo.png" alt="Gateway Robotics Challenge Logo"></a>
+  </div>
+  <nav>
+    <ul>
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</div>

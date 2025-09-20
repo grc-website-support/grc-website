@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  padding: 0.5rem 1rem;
+}
+
+.nav-wrapper .logo img {
+  height: 50px;
+}
+
+.nav-wrapper nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-wrapper nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-wrapper nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.hero {
+  background: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-wrapper {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.hero {
+  background: url('/uploads/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.event-info, .latest-updates, .sponsors-preview {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.event-info h2,
+.latest-updates h2,
+.sponsors-preview h2 {
+  color: #003366;
+}
+
+.latest-updates ul {
+  list-style: none;
+  padding: 0;
+}
+
+.latest-updates li {
+  margin-bottom: 0.5rem;
+}
+
+.latest-updates .date {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #003366;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #0055aa;
+}
+
+.sponsors-preview .sponsor-logos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsors-preview img {
+  max-height: 80px;
+  width: auto;
+}

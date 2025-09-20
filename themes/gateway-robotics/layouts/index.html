@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Gateway Robotics Challenge</h1>
+    <p>Celebrating robotics and teamwork in St. Louis</p>
+  </div>
+</section>
+
+<!-- Event Info -->
+<section class="event-info">
+  <h2>Next Event</h2>
+  <p><strong>Date:</strong> September 20–21, 2025</p>
+  <p><strong>Location:</strong> Chaifetz Arena, St. Louis, MO</p>
+  <a class="btn" href="/event-info/">Learn More</a>
+</section>
+
+<!-- Latest Updates -->
+<section class="latest-updates">
+  <h2>Latest Updates</h2>
+  <ul>
+    {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">— {{ .Date.Format "Jan 2, 2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+  <p><a href="/posts/">View all updates →</a></p>
+</section>
+
+<!-- Sponsors Preview -->
+<section class="sponsors-preview">
+  <h2>Our Sponsors</h2>
+  <div class="sponsor-logos">
+    <img src="/uploads/sponsor1.png" alt="Sponsor 1">
+    <img src="/uploads/sponsor2.png" alt="Sponsor 2">
+    <img src="/uploads/sponsor3.png" alt="Sponsor 3">
+  </div>
+  <p><a href="/sponsors/">View all sponsors →</a></p>
+</section>
+
+{{ end }}

@@ -1,0 +1,40 @@
+baseURL = "https://gatewayroboticschallenge.com/"
+languageCode = "en-us"
+title = "Gateway Robotics Challenge"
+theme = "gateway-robotics"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Event Info"
+    url  = "/event-info/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Schedule"
+    url  = "/schedule/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Teams"
+    url  = "/teams/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Sponsors"
+    url  = "/sponsors/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 7
