@@ -66,6 +66,58 @@ body {
   margin-top: 0.5rem;
 }
 
+/* === HOMEPAGE LAYOUT === */
+
+/* Hero banner */
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Welcome text box */
+.welcome {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* News section */
+.news h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news li {
+  margin-bottom: 0.75rem;
+}
+
+.news li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #003366;
+}
+
+.news li a:hover {
+  text-decoration: underline;
+}
+
+.news .date {
+  font-style: italic;
+  color: #555;
+}
+
 .event-info, .latest-updates, .sponsors-preview {
   max-width: 900px;
   margin: 2rem auto;
@@ -132,6 +184,12 @@ body {
   color: white;
   padding: 1rem;
   flex-shrink: 0;
+
+  /* Sticky positioning */
+  position: sticky;
+  top: 0;
+  height: 100vh;   /* full viewport height */
+  overflow-y: auto; /* scroll inside if nav gets long */
 }
 
 .sidebar .logo img {

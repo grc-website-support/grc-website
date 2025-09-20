@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <!-- Hero Banner -->
+  <section class="hero">
+    <img src="/uploads/cover.png" alt="Gateway Robotics Challenge banner">
+  </section>
+
+  <!-- Welcome Text -->
+  <section class="welcome">
+    <h1>Welcome to the Gateway Robotics Challenge</h1>
+    <p>
+      The Gateway Robotics Challenge (GRC) is an off-season FIRST Robotics Competition
+      event that takes place in St. Louis, Missouri.
+    </p>
+  </section>
+
+  <!-- News Section -->
+  <section class="news">
+    <h2>Latest Updates</h2>
+    <ul>
+      {{ range first 3 (where .Site.RegularPages "Section" "news") }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="date"> — {{ .Date.Format "Jan 2, 2006" }}</span>
+        </li>
+      {{ else }}
+        <li>No news posts yet. Check back soon!</li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

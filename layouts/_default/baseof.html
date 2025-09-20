@@ -6,12 +6,11 @@
 <body>
   <div class="layout">
     {{ partial "header.html" . }} 
-    <main class="content">
-      {{ block "main" . }}{{ end }}
-    </main>
-  </div>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  <main class="content">
+    {{ block "main" . }}{{ end }}
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </main>
 </body>
 </html>
