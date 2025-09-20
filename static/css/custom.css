@@ -1,28 +1,16 @@
-/* body { 
+body { 
   font-family: Arial, sans-serif; 
   margin: 0; 
   padding: 0;
-} */
-
-/* === TEST OVERRIDES === */
-
-/* Change the whole page background */
-body {
-  background-color: #f9f9f9 !important;
 }
 
-/* Make the site header/nav bar bright orange */
 .nav-wrapper {
-  background: #ff6600 !important;
-}
-
-/* .nav-wrapper {
    display: flex;
    justify-content: space-between;
    align-items: center;
    background: #003366;
    padding: 0.5rem 1rem;
-} */
+}
 
 .nav-wrapper .logo img {
   height: 50px;
@@ -36,15 +24,10 @@ body {
   padding: 0;
 }
 
-/* .nav-wrapper nav a {
+.nav-wrapper nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-} */
-
-/* Change nav links to black */
-.nav-wrapper nav a {
-  color: black !important;
 }
 
 .nav-wrapper nav a:hover {
@@ -57,41 +40,21 @@ body {
   padding: 1rem;
 }
 
-/* .hero {
-  background: #eee;
-  padding: 2rem;
-  text-align: center;
-} */
-
-/* Hero section background test */
-.hero {
-  background: #003366 !important;
-  color: white !important;
-  padding: 3rem 1rem !important;
-  text-align: center;
-}
-
-/* .footer-wrapper {
+.footer-wrapper {
   background: #003366;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-} */
+} 
 
-/* Footer background to dark red */
-.footer-wrapper {
-  background: #990000 !important;
-  color: white !important;
-}
-
-/* .hero {
-  background: url('/uploads/hero-bg.jpg') no-repeat center center;
+.hero {
+  background: url('/img/cover.png') no-repeat center center;
   background-size: cover;
   color: white;
   text-align: center;
   padding: 4rem 1rem;
-} */
+}
 
 .hero h1 {
   font-size: 3rem;
