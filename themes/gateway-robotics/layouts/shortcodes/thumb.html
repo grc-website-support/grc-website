@@ -1,0 +1,10 @@
+<!--{{ $img := .Page.Resources.GetMatch (.Get "src") }} -->
+<!--{{ $thumb := $img.Fit "300x200" }}   thumbnail -->
+<!--{{ $large := $img.Resize "1200x" }}  full-size -->
+
+<!-- no hyperlinks -->
+<!--<img src="{{ $thumb.RelPermalink }}" alt="{{ .Get "alt" }}"> -->
+
+<!-- hyperlinks -->
+<!-- <a href="{{ $large.RelPermalink }}" target="_blank"> -->
+<!--  <img src="{{ $thumb.RelPermalink }}" alt="{{ .Get "alt" }}"> -->

@@ -4,27 +4,56 @@
     <img src="/uploads/cover.png" alt="Gateway Robotics Challenge banner">
   </section>
 
-  <!-- Welcome Text -->
+  <!-- Welcome Section -->
   <section class="welcome">
     <h1>Welcome to the Gateway Robotics Challenge</h1>
     <p>
       The Gateway Robotics Challenge (GRC) is an off-season FIRST Robotics Competition
-      event that takes place in St. Louis, Missouri.
+      that takes place in St. Louis, Missouri. It gives teams a chance to compete, learn,
+      and connect outside of the main season.
     </p>
   </section>
 
-  <!-- News Section -->
-  <section class="news">
-    <h2>Latest Updates</h2>
-    <ul>
-      {{ range first 3 (where .Site.RegularPages "Section" "news") }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span class="date"> — {{ .Date.Format "Jan 2, 2006" }}</span>
-        </li>
-      {{ else }}
-        <li>No news posts yet. Check back soon!</li>
-      {{ end }}
-    </ul>
+  <!-- Event Information -->
+  <section class="event-info">
+    <h2>Event Information</h2>
+    <p>
+      The 2025 Gateway Robotics Challenge will be held at <strong>[Venue Name]</strong>
+      on <strong>[Event Date]</strong>.
+    </p>
+    <p>
+      Teams from across the region will compete in an exciting FRC-style competition.
+      Details on schedule, venue, and logistics will be posted here.
+    </p>
+    <p><a href="/event-info/">Learn more →</a></p>
   </section>
+
+  <!-- Registration -->
+  <section class="registration">
+    <h2>Registration</h2>
+    <p>
+      Team registration opens soon! Check back for details on fees, deadlines,
+      and how to sign up.
+    </p>
+    <p><a href="/registration/">Register your team →</a></p>
+  </section>
+
+  <!-- Teams -->
+  <section class="teams">
+    <h2>Participating Teams</h2>
+    <p>
+      A list of registered teams will appear here as we get closer to the event.
+    </p>
+    <p><a href="/teams/">View teams →</a></p>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="sponsors">
+    <h2>Our Sponsors</h2>
+    <p>
+      Thank you to our generous sponsors who make this event possible!
+    </p>
+    <p><a href="/sponsors/">See all sponsors →</a></p>
+  </section>
+
 {{ end }}

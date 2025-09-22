@@ -49,11 +49,11 @@ body {
 } 
 
 .hero {
-  background: url('/img/cover.png') no-repeat center center;
-  background-size: cover;
+  /* background: url('/img/cover.png') no-repeat center center; */
+  background-size: cover; 
   color: white;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 0rem 0rem;
 }
 
 .hero h1 {
@@ -68,7 +68,17 @@ body {
 
 /* === HOMEPAGE LAYOUT === */
 
-/* Hero banner */
+/* Shared box styling */
+.welcome, .event-info, .registration, .teams, .sponsors, .contact {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* Hero */
 .hero img {
   width: 100%;
   height: auto;
@@ -77,22 +87,28 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Welcome text box */
-.welcome {
-  background: #fff;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-/* News section */
-.news h2 {
+/* Section headings */
+section h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.25rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
 
+/* Links inside sections */
+section a {
+  font-weight: bold;
+  color: #003366;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* News section tweaks */
 .news ul {
   list-style: none;
   padding: 0;
@@ -103,30 +119,18 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.news li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: #003366;
-}
-
-.news li a:hover {
-  text-decoration: underline;
-}
-
 .news .date {
   font-style: italic;
   color: #555;
 }
 
-.event-info, .latest-updates, .sponsors-preview {
+.latest-updates {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
 }
 
-.event-info h2,
-.latest-updates h2,
-.sponsors-preview h2 {
+.latest-updates h2 {
   color: #003366;
 }
 
